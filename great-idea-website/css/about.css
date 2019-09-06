@@ -1,0 +1,62 @@
+/* new css file for stretch goal */
+
+/* font adjustment for stretch goal */
+h4 {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+
+/* header content */
+
+main {
+	margin-top: 100px;
+}
+
+#header-img-container {
+    background-image: url("../img/achievement.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	display: inline-block;
+    width: 48%;
+    min-height: 400px;
+	text-align: center;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+.page-content {
+    display: inline-block;
+    width: 48%;
+    margin: 0 10px;
+}
+
+#content-header h1 {
+    font-size: 4em;
+    margin: 60px 0 20px 0;
+    text-align: center;
+}
+
+.main-text-box {
+    text-align: left;
+    padding: 20px;
+}
+
+
+/* main content */
+
+.text-box {
+	display: inline-block;
+	margin: 40px 10px;
+    padding: 0 5px;
+    width: 45%;
+    vertical-align: top;
+}
+
+.text-box p {
+    text-align: left;
+}
+
+h4 {
+    margin-top: 20px;
+}
