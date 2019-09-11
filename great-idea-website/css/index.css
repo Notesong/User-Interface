@@ -1,107 +1,16 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-/* Your code starts here! */
-
-.container {
-	margin: 20px 40px;
-}
-
-
-/* main header */
-
-header nav, #logo-container {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-header nav {
-	width: 70%;
-	text-align: justify;
-}
-
-#logo-container {
-	width: 10%;
-}
-
-#main-nav-bar a {
-	text-decoration: none;
-	color: darkgray;
-	padding: 0 3%;
-}
-
-#main-nav-bar a:hover {
-	color: black;
+/* font adjustment for stretch goal */
+h4 {
+	font-family: 'Share Tech Mono', monospace;
 }
 
 
 /* content header */
 
+/* adjusted for fixed navbar for stretch goal */
 main {
-	margin-top: 40px;
+	margin-top: 100px;
 }
+
 #content-header, #header-img-container {
 	display: inline-block;
 	width: 48%;
@@ -110,14 +19,41 @@ main {
 	vertical-align: middle;
 }
 
+/* img set to background for stretch goal */
+#header-img-container {
+    background-image: url("../img/header-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+	min-width: 379px;
+    min-height: 379px;
+}
+
 #content-header h1 {
 	font-size: 4em;
+}
+
+/* animation code for stretch goal */
+@keyframes button-code {
+	from {}
+	to {color: white; background: darkgrey}
+}
+
+#get-started-button-container {
+	min-height: 50px;
+	vertical-align: center;
 }
 
 #get-started-button {
 	border: 2px solid darkgray;
 	background: white;
 	padding: 5px 40px;
+}
+
+#get-started-button:hover {
+	box-sizing: border-box;
+	animation-name: button-code;
+	animation-duration: .5s;
+	animation-fill-mode: both;
 }
 
 
@@ -146,26 +82,12 @@ main {
 	width: 32%;
 }
 
-#middle-img {
-	display: block;
-	margin: 0 auto;
-	width: 100%
-}
-
-
-
-
-/* footer */
-
-footer {
-	margin-top: 40px;
-}
-
-footer p {
-	padding-bottom: 20px;
-}
-
-#copyright {
-	text-align: center;
-	margin: 30px 0 100px 0;
+/* changed to background image for stretch goal */
+#middle-content {
+	background-image: url("../img/mid-page-accent.jpg");
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 182px;
+	width: 100%;
 }
